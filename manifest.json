@@ -1,0 +1,23 @@
+{
+    "name": "CSDN_COPY_CODE",
+    "description": "let you can copy the code from csdn",
+    "version": "1.0",
+    "permissions": [
+      "activeTab",
+      "contextMenus"
+    ],
+    
+
+    "manifest_version": 2,
+
+    "content_scripts": [
+      {
+        
+        "matches": ["*://blog.csdn.net/*"],
+        "css": ["user_select.css"],
+        "js" : ["user_select.js"]
+      }
+  
+    ]
+  }
+  
